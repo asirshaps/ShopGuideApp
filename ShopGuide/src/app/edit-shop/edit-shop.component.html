@@ -1,0 +1,50 @@
+<div class='card'>
+    <form (ngSubmit)="updateShop()">
+<div class='card-header'>
+    {{title}}
+</div>
+<div class="card-body">
+    <div class='table-responsive'>
+        <table class="table">
+            <tbody>
+                <!-- <tr>
+                    <td><label>Shop no</label></td>
+                    <td><input type="text" name="s_no" [(ngModel)]="editItem.shopNo"></td>
+                </tr> -->
+                <tr>
+                    <td><label>Shop Name</label></td>
+                    <td><input type="text" name="s_name" [(ngModel)]="editItem.shopName"></td>
+                </tr>
+                <tr>
+                    <td><label>Shop Category</label></td>
+                    <td><input type="text" name="s_ca" [(ngModel)]="editItem.shopCategory"></td>
+                </tr>
+                <tr>
+                    <td><label>Shop location</label></td>
+                    <td><input type="text" name="s_lo" [(ngModel)]="editItem.shopLocation"></td>
+                </tr>
+                <tr>
+                    <td><label>Contact No</label></td>
+                    <td><input type="text" name="s_co" [(ngModel)]="editItem.contactNo"></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Shop starRating</label></td>
+                    <td><input type="text" name="s_rating" [(ngModel)]="editItem.starRating"></td>
+                </tr>
+                <!-- <tr>
+                    <td><label>Shop imageUrl</label></td>
+                    <td><input type="text" name="s_image" [(ngModel)]="editItem.imageUrl"></td>
+                </tr> -->
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</form>
+</div>
+
+

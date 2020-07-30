@@ -1,0 +1,53 @@
+<div class='card'>
+    <form (ngSubmit)="AddShop()">
+<div class='card-header'>
+    {{title}}
+</div>
+<div class="card-body">
+    <div class='table-responsive'>
+        <table class="table">
+            <tbody>
+                <!-- <tr>
+                    <td><label>Owner Id</label></td>
+                    <td><input type="text" name="s_id" [(ngModel)]="shopItem.shopId"></td>
+                </tr> -->
+                <!-- <tr>
+                    <td><label>Shop no</label></td>
+                    <td><input type="text" name="s_no" [(ngModel)]="shopItem.shopNo"></td>
+                </tr> -->
+                <tr>
+                    <td><label>Shop Name</label></td>
+                    <td><input type="text" name="s_name" [(ngModel)]="shopItem.shopName"></td>
+                </tr>
+                <tr>
+                    <td><label>Shop Category</label></td>
+                    <td><input type="text" name="s_ca" [(ngModel)]="shopItem.shopCategory"></td>
+                </tr>
+                <tr>
+                    <td><label>Shop Location</label></td>
+                    <td><input type="text" name="s_lo" [(ngModel)]="shopItem.shopLocation"></td>
+                </tr>
+                <tr>
+                    <td><label>Contact No</label></td>
+                    <td><input type="text" name="s_co" [(ngModel)]="shopItem.contactNo"></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Shop starRating</label></td>
+                    <td><input type="text" name="s_rating" [(ngModel)]="shopItem.starRating"></td>
+                </tr>
+                <!-- <tr>
+                    <td><label>Shop imageUrl</label></td>
+                    <td><input type="text" name="s_image" [(ngModel)]="shopItem.imageUrl"></td>
+                </tr> -->
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</form>
+</div>
+

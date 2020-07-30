@@ -1,0 +1,47 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center text-white mb-4">Bootstrap 4 Login Form</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <span class="anchor" id="formLogin"></span>
+                    <!-- form card login -->
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h3 class="mb-0">Fill me up!</h3>
+                        </div>
+                        
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin">
+                                <div class="form-group">
+                                    <label for="location">Select location</label>
+                                     <select class="form-control" id="location_type" name='location_type' [(ngModel)]="login.location_type">
+                                        <option *ngFor="let x of locationlist" [value]="x">{{x}}</option>
+                                        <!-- <option>Mannarkad</option>
+                                        <option>Ottappalam</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="category">Select category</label>
+                                    <select class="form-control" id="catogory_type" name='category_type' [(ngModel)]="login.category_type">
+                                         <option *ngFor="let x of categorylist" [value]="x">{{x}}</option>
+                                         <!-- <option>Women Boutique</option>
+                                         <option>Supermarket</option> -->
+                                     </select> 
+                                </div>
+                                <button type="button" (click)="userLogin()" class="btn btn-success btn-lg float-right">Get my shops</button>
+                            </form>
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+

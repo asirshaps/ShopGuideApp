@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- <button class="btn btn-primary">
+                                <!-- (click)='toggleImage()'>
+                        {{showImage? 'Hide' : 'Show'}} Image -->
+                                <!-- show image
+                            </button> --> 
+                        </th>
+                        <th>Id</th>
+                        <th>Shop No</th>
+                        <th>Shop Name</th>
+                        <th>Shop Category</th>
+                        <th>Contact No</th>
+                        <th>5 Star Rating</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor= 'let shop of shops'>
+                 <td><img *ngIf='showImage'
+                    [src] = 'shop.imageUrl'
+                    [title] = 'shop.shopName'
+                    [style.width.px] = 'imageWidth'
+                    [style.margin.px] = 'imageMargin'></td>
+                <td>{{ my-shop.shopId }}</td>  
+                <td>{{ my-shop.shopNo }}</td>   
+                <td>{{ my-shop.shopName }}</td>
+                <td>{{ my-shop.shopCategory }}</td>
+                <td>{{ my-shop.contactNo }}</td>
+                <td>{{ my-shop.starRating }}</td>
+                <td><a routerLink='/edit/{{shop._id}}' class="btn btn-success">Edit</a></td>
+                <td><a (click)="deleteShop(shop._id)" style="color:white" class="btn btn-success">Delete</a></td>
+            </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
